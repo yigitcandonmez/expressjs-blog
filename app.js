@@ -95,6 +95,6 @@ app.get("/", async (req, res) => {
   }
 });
 
-app.listen(port, () => {
-  console.log(`http://localhost:${port}`);
+app.listen(process.env.PORT, "0.0.0.0", () => {
+  console.log(`http://localhost:${process.env.PORT}`);
 });
