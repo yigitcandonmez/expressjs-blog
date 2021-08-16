@@ -1,0 +1,15 @@
+bcrypt
+body-parser
+connect-flash
+cookie-parser
+ejs
+express
+express-flash
+express-session
+mongoose
+nodemailer
+nodemailer-markdown
+nodemon
+passport
+passport-local
+dotenv
