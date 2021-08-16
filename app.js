@@ -2,7 +2,6 @@ const express = require("express");
 const path = require("path");
 const mongoose = require("mongoose");
 const app = express();
-const port = 3000;
 const errorHandler = require("./middleware/errorHandler");
 const bodyParser = require("body-parser");
 const nodemailer = require("nodemailer");
@@ -95,6 +94,6 @@ app.get("/", async (req, res) => {
   }
 });
 
-app.listen(port, () => {
-  console.log(`http://localhost:${port}`);
+app.listen(process.env.PORT || 3000, () => {
+  console.log(`http://localhost:${process.env.PORT}`);
 });
